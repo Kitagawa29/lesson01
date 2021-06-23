@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import "math"
 
 func convertNumber(num int) string {
 	var roman string
@@ -72,16 +72,16 @@ func convertNumber(num int) string {
 	return roman
 }
 
-/*def myfunc(num,str,i){
-    if num == 0 {
-        return str
-    } else{
-        return myfunc(num/10,convertNumber(num%10*math.Pow(10,i)+str),i++)
-    }
-
-}*/
+func myfunc(num int, str string, i int) string {
+	if num == 0 {
+		return str
+	} else {
+		return myfunc(num/10, convertNumber(num%10*int(math.Pow(10, float64(i))))+str, i+1)
+	}
+}
 
 func main() {
 	// implementation is not yet
-	fmt.Println(convertNumber(2))
+	//var i = 0
+	//fmt.Println(convertNumber(2))
 }

@@ -30,16 +30,16 @@ func TestNumConvert04(t *testing.T) {
 	}
 }
 
-/*func TestMyFunc01(t *testing.T) {
-	str := myfunc(1990)
+func TestMyFunc01(t *testing.T) {
+	str := myfunc(1990, "", 0)
 	if str != "MCMXC" {
 		t.Error("Test05 is failed")
 	}
-}*/
+}
 
-/*func TestMyFunc02(t *testing.T) {
-	str := myfunc(99)
+func TestMyFunc02(t *testing.T) {
+	str := myfunc(99, "", 0)
 	if str != "XCIX" {
 		t.Error("Test06 is failed")
 	}
-}*/
+}
